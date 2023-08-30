@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primarymainBtnClr: '#EB5757',
+          },
+         fontSize:{
+            btnFont: '20px',
+         }, 
+        }
+      }
+    }
+  </script>
 </head>
 <body>
-    
+    <header class="flex justify-center">
+        <nav class="mt-12 ">
+            <h1 class="text-5xl font-semibold mb-8  font-['Work Sans', sans-serif]">AI Universe Hub</h1>
+           <div class="flex justify-center ">
+            <button class="bg-primarymainBtnClr rounded-[16px] text-btnFont text-white px-[28px] py-[25px] hover:bg-red-300">Sort By Date</button>
+           </div>
+        </nav>
+    </header>
+<main>
+  <div id="phn-container" class="w-11/12 mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+
+  </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
 </body>
 </html>
